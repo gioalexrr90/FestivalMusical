@@ -1,0 +1,18 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Proyeto con Gulp, SASS y HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Giovanni Alejandro Rodriguez Ruiz",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
+}
