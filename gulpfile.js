@@ -1,5 +1,6 @@
 const { src, dest, watch } = require("gulp");
 const sass = require("gulp-sass")(require('sass'));
+const plumber = require('gulp-plumber');
 
 const pathSCSCC = 'src/scss/**/*.scss';
 const pathDestination = 'build/css';
@@ -7,6 +8,7 @@ const pathDestination = 'build/css';
 function css(done) {
 
     src(pathSCSCC) // Didentificar el archivo de SASS (src function)
+        .pipe( plumber() )
         .pipe( sass() ) // Compila (pipe function)
         .pipe( dest(pathDestination) ); //Almacena en el disco duro (dest function)
 
